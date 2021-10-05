@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="film_2.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
 
-    <form method="POST">
+    <form action="index.html" method="POST">
         <input type="text" name="filmNev" id="filmNev">
         <input type="text" name="filmRendezo" id="filmRendezo">
         <input type="number" name="filmEv" id="filmEv">
-        <button type="submit" onclick="hozzaad()">Hozzáad</button>
+        <button type="button" onclick="hozzaad()">Hozzáad</button>
+        <button type="button" onclick="btnListazas()">Listázás</button>
     </form>
+    <div>
+        <p id="teszt"></p>
+    </div>
 </body>
+<script src="film_2.js"></script>
 </html>

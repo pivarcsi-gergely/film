@@ -33,10 +33,13 @@ function btnListazas(){
     tablaLetrehozas();
 }
 
-function tablaLetrehozas(){
-    tablaLista.style.display = "";
 
-    tablaLista.innerHTML = "";
+var tablazat = document.getElementById('tablaLista');
+var tableBody = document.getElementById('tablaListaTest');
+function tablaLetrehozas(){
+    tablazat.style.display = "";
+
+    tableBody.innerHTML = "";
 
     for (let i = 0; i < filmLista.length; i++) {
         let row = tablaListaTest.insertRow();

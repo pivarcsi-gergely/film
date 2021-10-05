@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <style>
+       body{
+           color: whitesmoke;
+       }
+   </style>
 </head>
-<body>
+<body class="bg-dark">
 
-    <form action="index.html" method="POST">
-        <input type="text" name="filmNev" id="filmNev">
-        <input type="text" name="filmRendezo" id="filmRendezo">
-        <input type="number" name="filmEv" id="filmEv">
-        <button type="button" onclick="hozzaad()">Hozzáad</button>
-        <button type="button" onclick="btnListazas()">Listázás</button>
-    </form>
+    <div class="d-flex justify-content-center">
+        <div class="form-group w-50">
+            <form action="index.html" method="POST">
+                <div class="mb-4">
+                    <label for="filmNev">Írja e szöveg alá a film címét:</label><br>
+                    <input type="text" name="filmNev" class="form-control" id="filmNev" placeholder="Film címe">
+                </div>
+                <div class="mb-4">
+                    <label for="filmRendezo">Írja e szöveg alá a film rendezőjét:</label><br>
+                    <input type="text" name="filmRendezo" class="form-control" id="filmRendezo" placeholder="Film rendezője">
+                </div>
+                <div class="mb-4">
+                    <label for="filmEv">Írja e szöveg alá a film kiadási évét:</label><br>
+                    <input type="number" name="filmEv" class="form-control" id="filmEv" placeholder="Film kiadási éve">
+                </div>
+                <div class="mb-1">
+                    <button type="button" onclick="hozzaad()">Hozzáad</button>
+                </div>
+                <div>
+                    <button type="button" onclick="btnListazas()">Listázás</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <table id="tablaLista" style="display: none;">
         <thead id="tablaListaFej">

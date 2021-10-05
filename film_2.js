@@ -11,3 +11,8 @@ class Film {
 
 let filmLista = [];
 
+function hozzaad(){
+    let bekertFilmNev = document.getElementById("filmNev").value;
+    let bekertFilmRendezo = document.getElementById("filmRendezo").value;
+    let bekertFilmEv = document.getElementById("filmEv").value;
+}

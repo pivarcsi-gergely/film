@@ -8,6 +8,11 @@
        body{
            color: whitesmoke;
        }
+       #tablaLista{
+           width: 75%;
+           margin-left: auto;
+           margin-right: auto;
+       }
    </style>
 </head>
 <body class="bg-dark">
@@ -27,26 +32,29 @@
                     <label for="filmEv">Írja e szöveg alá a film kiadási évét:</label><br>
                     <input type="number" name="filmEv" class="form-control" id="filmEv" placeholder="Film kiadási éve">
                 </div>
-                <div class="mb-1">
-                    <button type="button" onclick="hozzaad()">Hozzáad</button>
-                </div>
-                <div>
-                    <button type="button" onclick="btnListazas()">Listázás</button>
+                <div class="d-flex justify-content-center mb-5">
+                    <div class="mb-1">
+                        <button type="button" onclick="hozzaad()">Hozzáad</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="btnListazas()">Listázás</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-
-    <table id="tablaLista" style="display: none;">
-        <thead id="tablaListaFej">
-            <th>A film neve</th>
-            <th>A film rendezője</th>
-            <th>A film kiadási éve</th>
-        </thead>
-        <tbody id="tablaListaTest">
-
-        </tbody>
-    </table>
+    <div>
+        <table id="tablaLista" style="display: none;">
+            <thead id="tablaListaFej">
+                <th>A film neve</th>
+                <th>A film rendezője</th>
+                <th>A film kiadási éve</th>
+            </thead>
+            <tbody id="tablaListaTest">
+    
+            </tbody>
+        </table>
+    </div>
 </body>
 <script src="film_2.js"></script>
 </html>

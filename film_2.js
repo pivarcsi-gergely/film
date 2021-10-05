@@ -9,12 +9,5 @@ class Film {
     }
 }
 
-Film = new Film('Jaws', 128);
-console.log(Film.toString());
-console.log(Film.hosszOra);
+let filmLista = [];
 
-
-function beolvasas() {
-    let filmNev = document.getElementById("filmNev").value;
-    let filmHosszPerc = document.getElementById("filmHosszPerc").value;
-}
